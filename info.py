@@ -117,10 +117,10 @@ TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/S95Hub")   # Second tutoria
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/S95Hub")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
-SHORTENER_API = environ.get("SHORTENER_API", "e4c1d5f1-da50-4570-ac48-41b0c236c06a") # Shortener API key
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "antibypss.vercel.app") # Shortener website
-#SHORTENER_API = environ.get("SHORTENER_API", "67d93601-1976-4f5b-af1a-a29de46635ae") # Shortener API key
+#SHORTENER_API = environ.get("SHORTENER_API", "e4c1d5f1-da50-4570-ac48-41b0c236c06a") # Shortener API key
 #SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "antibypss.vercel.app") # Shortener website
+SHORTENER_API = environ.get("SHORTENER_API", "67d93601-1976-4f5b-af1a-a29de46635ae") # Shortener API key
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "antibypss.vercel.app") # Shortener website
  
 SHORTENER_API2 = environ.get("SHORTENER_API2", "av_botz_kaGRKAIESMTfHBOxhDhbDjZh0SVr2")  # Shortener API key for second website
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "avbypassbot.koyeb.app") # Shortener website for second website
