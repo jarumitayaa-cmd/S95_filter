@@ -227,7 +227,7 @@ BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 
 # IMPORTANT: hostname only, no https://
 # Example default for your service:
-FQDN = str(getenv('FQDN', 's95filter.up.railway.app'))
+FQDN = str(getenv('FQDN', 's95-filter.onrender.com'))
 
 # Base URL (Render does HTTPS with no custom port)
 if NO_PORT:
