@@ -1,13 +1,15 @@
 from aiohttp import web
 from .route import routes
-from asyncio import sleep 
+from asyncio import sleep
 from datetime import datetime
+from urllib.parse import urlparse
 from database.users_chats_db import db
 from info import URL, PREMIUM_LOGS
 from Script import script
 import aiohttp
 import asyncio
 import logging
+import os
 
 logger = logging.getLogger(__name__)
 
@@ -37,15 +39,24 @@ async def check_expired_premium(client):
             await sleep(0.5)
         await sleep(1)
 
+def _ping_url():
+    """Root URL of this service. Prefers Render's auto-set RENDER_EXTERNAL_URL, falls back to URL."""
+    base = os.environ.get("RENDER_EXTERNAL_URL") or URL or ""
+    if "://" not in base:
+        base = "https://" + base
+    p = urlparse(base)
+    return f"{p.scheme}://{p.netloc}/"
+
 async def keep_alive():
     """Keep bot alive by sending periodic pings."""
+    ping_url = _ping_url()
+    logger.info(f"Keep-alive target: {ping_url}")
     async with aiohttp.ClientSession() as session:
         while True:
-            await asyncio.sleep(298)
+            await asyncio.sleep(240)
             try:
-                async with session.get(URL) as resp:
+                async with session.get(ping_url) as resp:
                     if resp.status != 200:
                         logger.info(f"⚠️ Ping Error! Status: {resp.status}")
             except Exception as e:
-                logger.info(f"❌ Ping Failed: {e}")           
-
+                logger.info(f"❌ Ping Failed: {e}")
