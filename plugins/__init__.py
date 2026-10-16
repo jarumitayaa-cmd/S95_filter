@@ -37,7 +37,7 @@ async def check_expired_premium(client):
                 else:
                     logger.warning("Premium expire notification error for user %s: %s", user_id, e)
             await sleep(0.5)
-        await sleep(1)
+        await sleep(60)
 
 def _ping_url():
     """Root URL of this service. Prefers Render's auto-set RENDER_EXTERNAL_URL, falls back to URL."""
