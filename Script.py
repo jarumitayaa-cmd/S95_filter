@@ -154,8 +154,8 @@ Nᴀᴍᴇ - {}
 🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)</b>"""
     
     MVE_NT_FND = NOT_FOUND_TXT = """<b>😌 ᴛʜɪꜱ ᴍᴏᴠɪᴇ ɪꜱ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ.</b>
-    <b>I already sent #noresults log to admin.</b>
-    <b>if you want, provide proper details about this movie here👇</b>"""
+    <b>✉️I already sent #noresults log to admin.</b>
+    <b>🔺if you want, provide proper details about this movie here👇</b>"""
 
     ALREADY_AVAILABLE_TXT = """<b>ʜᴇʏ {},
     
