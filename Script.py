@@ -259,7 +259,7 @@ Nᴀᴍᴇ - {}
 Iᴅ : <code>{}</code>
 Nᴀᴍᴇ : {}
 
-Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
+Mᴇꜱꜱᴀɢᴇ : <code>{}</code>"""
     
     CAPTION = """<b><a href="https://t.me/s95hubz">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href="https://t.me/s95hub">[ S95Hub ]</a></b>"""
 
